@@ -51,13 +51,12 @@ jobs:
           name: verified-formula
           path: generated
       - name: Install from source and exercise CLI
-        env:
-          HOMEBREW_NO_INSTALL_FROM_API: '1'
         run: |
           # Homebrew sanitizes Git identity environment variables for tap-new.
           # This config belongs only to the disposable Actions runner.
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          brew update
           brew tap-new tunnexio/verification
           cp generated/tunnex-cli.rb "$(brew --repository tunnexio/verification)/Formula/tunnex-cli.rb"
           brew install --build-from-source tunnexio/verification/tunnex-cli
