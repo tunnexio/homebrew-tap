@@ -1,9 +1,9 @@
 class TunnexCli < Formula
   desc "Command-line client for Tunnex Zero Trust networking"
   homepage "https://tunnex.io"
-  url "https://github.com/tunnexio/tunnex/archive/38f07a0551dac6d0cb14560e64ed2525ac8d5817.tar.gz"
-  version "0.1.40"
-  sha256 "e5a74091ad2bc25a00aa2baf5c3f568cbd4f9a38e9874ee8593b9372bd94727c"
+  url "https://github.com/tunnexio/tunnex/archive/75f2086a28493aeac1386e8923f62b046899a2cb.tar.gz"
+  version "0.1.41"
+  sha256 "04be84d56804fb1b087f6f269aea0b1763153cd58972c5f1b236981bc48fe0c5"
   license "Apache-2.0"
   revision 1
 
